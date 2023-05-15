@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="page fallback" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ projectName }}: {{ pages[pageId].name }}</title>
+	{% include "./detect-format.twig" %}
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page__body">
+	{% include "./header.twig" %}
+
+	<main class="main-content">
+	{% block main %}{% endblock %}
+	</main>
+
+	{% include "./footer.twig" %}
+</body>
+
+</html>
