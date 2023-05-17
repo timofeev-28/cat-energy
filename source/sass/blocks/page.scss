@@ -20,7 +20,7 @@
 		background: hsl(0 0% 96%) var(--bg-image) no-repeat center / contain;
 	}
 
-	@include bg-image(example);
+	// @include bg-image(example);
 }
 
 .page__centerer {

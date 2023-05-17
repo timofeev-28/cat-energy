@@ -2,7 +2,7 @@
 
 [![Project check][check-image]][check-url]
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/adaptive/28/user/000000000000).
+* Студент: [Дмитрий Тимофеев](https://htmlacademy.ru/profile/id2213139).
 * Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
