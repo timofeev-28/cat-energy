@@ -41,6 +41,48 @@
 					"height": 320
 				}
 			]
+		},
+		"promo": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 552,
+					"height": 499
+				},
+				{
+					"viewport": "tablet",
+					"width": 709,
+					"height": 609
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 270
+				}
+			]
+		},
+		"cat-cat": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 560,
+					"height": 512
+				},
+				{
+					"viewport": "tablet",
+					"width": 560,
+					"height": 512
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 256
+				}
+			]
 		}
 	}
 }

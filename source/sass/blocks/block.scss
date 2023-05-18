@@ -35,12 +35,12 @@
 		}
 	}
 
-	&::before {
-		content: "";
-		width: var(--size);
-		aspect-ratio: 1;
-		border-radius: 100%;
-		background: var(--fill);
-		filter: invert(1);
-	}
+	// &::before {
+	// 	content: "";
+	// 	width: var(--size);
+	// 	aspect-ratio: 1;
+	// 	border-radius: 100%;
+	// 	background: var(--fill);
+	// 	filter: invert(1);
+	// }
 }

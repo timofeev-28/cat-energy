@@ -1,25 +1,22 @@
 <header class="header">
-
 	<a class="header__logo-link header__logo-link--img" href="{{ pages[pageId].path }}" {% if permalink == "./" %} aria-current="page"{% endif %}>
-		<img class="header__logo-img" src="./img/logo-sprite.svg#logo-img-mobile" width="34" height="38" alt="Логотип магазина рисунок кота">
-	</a>
-
-	<a class="header__logo-link header__logo-link--text" href="{{ pages[pageId].path }}" {% if permalink == "./" %} aria-current="page"{% endif %}>
-		<img class="header__logo-text" src="./img/logo-sprite.svg#logo-text-mobile" width="101" height="18" alt="Логотип магазина надпись Cat Energy">
-	</a>
-
-	<a class="header__logo-link header__logo-link--double" href="{{ pages[pageId].path }}" {% if permalink == "./" %} aria-current="page"{% endif %}>
 		<picture>
-			<source media="(min-width: {{ viewports.desktop }}px)" srcset="./img/logo-sprite.svg#logo-desktop">
-			<img class="header__logo-double" src="./img/logo-sprite.svg#logo-tablet" width="174" height="52" alt="Логотип магазина рисунок кота">
+			<source media="(min-width: {{ viewports.desktop }}px)" srcset="./img/logo-sprite.svg#logo-img-desktop">
+			<source media="(min-width: {{ viewports.tablet }}px)" srcset="./img/logo-sprite.svg#logo-img-tablet">
+			<img class="header__logo-img" src="./img/logo-sprite.svg#logo-img-mobile" width="34" height="38" alt="Логотип магазина рисунок кота">
 		</picture>
 	</a>
-
+	<a class="header__logo-link header__logo-link--text" href="{{ pages[pageId].path }}" {% if permalink == "./" %} aria-current="page"{% endif %}>
+		<picture>
+			<source media="(min-width: {{ viewports.tablet }}px)" srcset="./img/logo-sprite.svg#logo-text-tablet">
+			<img class="header__logo-text" src="./img/logo-sprite.svg#logo-text-mobile" width="101" height="18" alt="Логотип магазина надпись Cat Energy">
+		</picture>
+	</a>
 	<nav class="main-nav">
 		<ul class="main-nav__list">
 			{% for page in pages %}
 			<li class="main-nav__item">
-				<a href="{{ page.path }}" class="main-nav__link link"{% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
+				<a href="{{ page.path }}" class="main-nav__link link {% if permalink == page.path %} link--current {% endif %}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
 			</li>
 			{% endfor %}
 		</ul>

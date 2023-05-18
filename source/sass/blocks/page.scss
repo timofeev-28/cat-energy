@@ -2,23 +2,24 @@
 	block-size: 100%;
 	font-family: var(--main-font);
 	font-size: 14px;
-	// font-size: 15px;
 	line-height: 18px;
-	// line-height: 24px;
 	color: var(--main-color);
 }
 
 .page__body {
 	margin: 0;
 	min-block-size: 100%;
+	min-inline-size: 320px;
+	display: flex;
+	flex-direction: column;
 
-	& main::before {
-		content: "Фон псевдоэлемента";
-		display: block;
-		inline-size: 100%;
-		aspect-ratio: 1;
-		background: hsl(0 0% 96%) var(--bg-image) no-repeat center / contain;
-	}
+	// & main::before {
+	// 	content: "Фон псевдоэлемента";
+	// 	display: block;
+	// 	inline-size: 100%;
+	// 	aspect-ratio: 1;
+	// 	background: hsl(0 0% 96%) var(--bg-image) no-repeat center / contain;
+	// }
 
 	// @include bg-image(example);
 }
