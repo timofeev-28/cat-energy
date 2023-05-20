@@ -83,6 +83,22 @@
 					"height": 256
 				}
 			]
+		},
+		"cat-bcg": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 720,
+					"height": 694
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 302
+				}
+			]
 		}
 	}
 }

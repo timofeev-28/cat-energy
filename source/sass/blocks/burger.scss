@@ -29,8 +29,10 @@
 	&::after {
 		bottom: 0;
 	}
+}
 
-	&:hover {
+@media (any-hover: hover) {
+	.burger:hover {
 		opacity: 0.6;
 	}
 }

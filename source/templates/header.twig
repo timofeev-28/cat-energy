@@ -13,11 +13,11 @@
 		</picture>
 	</a>
 	<button class="burger" type="button" aria-label="Кнопка открытия или закрытия бургер-меню"><span class="burger__line"></span></button>
-	<nav class="main-nav">
-		<ul class="main-nav__list">
+	<nav class="header-nav nav">
+		<ul class="nav__list">
 			{% for page in pages %}
-			<li class="main-nav__item">
-				<a href="{{ page.path }}" class="main-nav__link link {% if permalink == page.path %} link--current {% endif %}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
+			<li class="nav__item">
+				<a href="{{ page.path }}" class="nav__link link {% if permalink == page.path %} link--current {% endif %}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
 			</li>
 			{% endfor %}
 		</ul>

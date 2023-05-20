@@ -5,21 +5,23 @@
 {% block main %}
 
 	<section class="promo">
-		<h1 class="promo__title">Функциональное питание для котов</h1>
+		<h1 class="title-big promo__title">Функциональное питание для котов</h1>
 		<p class="promo__descr">Занялся собой? Займись котом!</p>
-		{% include "./templates/picture.twig" with {name: "promo", class: "promo__image", alt: "Банка с питанием для кота."} %}
-		<a class="promo__link" href="#!">Подобрать программу</a>
+		<div class="promo__wrap-img">
+			{% include "./templates/picture.twig" with {name: "promo", class: "promo__image", alt: "Банка с питанием для кота."} %}
+		</div>
+		<a class="promo__link link-btn" href="#!">Подобрать программу</a>
 	</section>
 
-	<section class="choice">
+	<section class="choice page__centerer">
 		<ul class="choice__list">
-			<li class="choice__item">
-				<h2 class="choice__title">Похудение</h2>
+			<li class="choice__item choice__item--slim">
+				<h2 class="choice__title title">Похудение</h2>
 				<p class="choice__descr">Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
 				<a class="choice__link" href="#!">Похудение Slim</a>
 			</li>
-			<li class="choice__item">
-				<h2 class="choice__title">Набор массы</h2>
+			<li class="choice__item choice__item--pro">
+				<h2 class="choice__title title">Набор массы</h2>
 				<p class="choice__descr">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
 				<a class="choice__link" href="#!">Каталог Pro</a>
 			</li>
