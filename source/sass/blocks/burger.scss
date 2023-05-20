@@ -1,0 +1,64 @@
+.burger {
+	grid-column: 3 / 4;
+	justify-self: end;
+	position: relative;
+	padding: 0;
+	inline-size: 24px;
+	block-size: 16px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	z-index: 3;
+	transition: opacity 0.3s;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		inline-size: 100%;
+		block-size: 2px;
+		background: var(--black);
+		transition: opacity 0.3s, transform 0.3s;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
+
+.burger__line {
+	position: absolute;
+	top: 7px;
+	right: 0;
+	left: 0;
+	block-size: 2px;
+	background: var(--black);
+}
+
+.burger--active .burger__line {
+	opacity: 0;
+}
+
+.burger--active {
+	block-size: 18px;
+	overflow: hidden;
+
+	&::before {
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+	}
+
+	&::after {
+		bottom: 50%;
+		transform: translateY(50%) rotate(-45deg);
+	}
+}

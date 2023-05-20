@@ -1,3 +1,9 @@
-<footer>
-	Подвал всех страниц
+{% set footerId = true %}
+
+<footer class="footer">
+	<a class="footer__link-logo" {% if permalink == "./" %} href="#index" aria-current="page" {% else %} href="index.html" {% endif %}>
+		<img class="footer__logo-img" src="./img/logo-sprite.svg#footer-logo" width="129" height="24" alt="Логотип магазина Cat Energy">
+	</a>
+	{% include "./social.twig" %}
+	<a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
 </footer>

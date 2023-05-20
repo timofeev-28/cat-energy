@@ -1,17 +1,18 @@
-<header class="header">
-	<a class="header__logo-link header__logo-link--img" href="{{ pages[pageId].path }}" {% if permalink == "./" %} aria-current="page"{% endif %}>
+<header class="header page__centerer">
+	<a class="header__logo-link header__logo-link--img" {% if permalink == "./" %} href="#!"  id="index" aria-current="page" {% else %} href="index.html" {% endif %}>
 		<picture>
 			<source media="(min-width: {{ viewports.desktop }}px)" srcset="./img/logo-sprite.svg#logo-img-desktop">
 			<source media="(min-width: {{ viewports.tablet }}px)" srcset="./img/logo-sprite.svg#logo-img-tablet">
 			<img class="header__logo-img" src="./img/logo-sprite.svg#logo-img-mobile" width="34" height="38" alt="Логотип магазина рисунок кота">
 		</picture>
 	</a>
-	<a class="header__logo-link header__logo-link--text" href="{{ pages[pageId].path }}" {% if permalink == "./" %} aria-current="page"{% endif %}>
+	<a class="header__logo-link header__logo-link--text" {% if permalink == "./" %} href="#!"  id="index" aria-current="page" {% else %} href="index.html" {% endif %}>
 		<picture>
 			<source media="(min-width: {{ viewports.tablet }}px)" srcset="./img/logo-sprite.svg#logo-text-tablet">
 			<img class="header__logo-text" src="./img/logo-sprite.svg#logo-text-mobile" width="101" height="18" alt="Логотип магазина надпись Cat Energy">
 		</picture>
 	</a>
+	<button class="burger" type="button" aria-label="Кнопка открытия или закрытия бургер-меню"><span class="burger__line"></span></button>
 	<nav class="main-nav">
 		<ul class="main-nav__list">
 			{% for page in pages %}

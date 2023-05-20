@@ -1,9 +1,11 @@
 .page {
 	block-size: 100%;
+	box-sizing: border-box;
 	font-family: var(--main-font);
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--main-color);
+	scroll-behavior: smooth;
 }
 
 .page__body {
@@ -26,7 +28,7 @@
 
 .page__centerer {
 	margin-block: 0;
-	margin-inline: 20px;
+	padding-inline: 20px;
 
 	@media #{$not-mobile} {
 		margin-inline: 30px;
