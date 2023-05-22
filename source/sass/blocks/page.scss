@@ -14,7 +14,7 @@
 	min-inline-size: 320px;
 	display: flex;
 	flex-direction: column;
-	// overflow: hidden;
+	overflow-x: hidden;
 
 	// & main::before {
 	// 	content: "Фон псевдоэлемента";
@@ -29,7 +29,7 @@
 
 .page__centerer {
 	margin-block: 0;
-	padding-inline: 20px;
+	margin-inline: 20px;
 
 	@media #{$not-mobile} {
 		margin-inline: 30px;

@@ -1,9 +1,17 @@
 {% set footerId = true %}
 
 <footer class="footer">
-	<a class="footer__link-logo" {% if permalink == "./" %} href="#index" aria-current="page" {% else %} href="index.html" {% endif %}>
-		<img class="footer__logo-img" src="./img/logo-sprite.svg#footer-logo" width="129" height="24" alt="Логотип магазина Cat Energy">
-	</a>
-	{% include "./social.twig" %}
-	<a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+	<ul class="footer__list page__centerer">
+		<li class="footer__item">
+			<a class="footer__link-logo" {% if permalink == "./" %} href="#index" aria-current="page" {% else %} href="index.html" {% endif %}>
+				<img class="footer__logo-img" src="./img/logo-sprite.svg#footer-logo" width="129" height="24" alt="Логотип магазина Cat Energy">
+			</a>
+		</li>
+		<li class="footer__item">
+			{% include "./social.twig" %}
+		</li>
+		<li class="footer__item">
+			<a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+		</li>
+	</ul>
 </footer>

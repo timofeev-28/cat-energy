@@ -28,47 +28,40 @@
 		</ul>
 	</section>
 
-	<section class="description">
-		<h2 class="description__title">Как это работает</h2>
-		<ul class="description__ist">
+	<section class="description page__centerer">
+		<h2 class="description__title title-big">Как это работает</h2>
+		<ul class="description__list">
 			<li class="description__item">
-				<p class="description__text">Функциональное питание содержит только полезные питательные вещества.</p>
+				<p class="description__text description__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
 			</li>
 			<li class="description__item">
-				<p class="description__text">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком и&nbsp;готово.</p>
+				<p class="description__text description__text--water">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком и&nbsp;готово.</p>
 			</li>
 			<li class="description__item">
-				<p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+				<p class="description__text description__text--eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
 			</li>
 			<li class="description__item">
-				<p class="description__text">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!</p>
+				<p class="description__text description__text--scales">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!</p>
 			</li>
 		</ul>
 	</section>
 
 	<section class="example">
-		<h2 class="example__title">Живой пример</h2>
-		<p class="example__descr">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
-		<dl class="example__list">
-			<div class="example__wrap">
-				<dt class="example__term">Снижение веса</dt>
-				<dd class="example__definition">5&nbsp;кг</dd>
+		<div class="example__centerer page__centerer">
+			<h2 class="example__title title-big">Живой пример</h2>
+			<p class="example__descr">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
+			<ul class="example__list">
+				<li class="example__item example__item--weight">5&nbsp;кг</li>
+				<li class="example__item example__item--days">60&nbsp;дней</li>
+			</ul>
+			<p class="example__total">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;РУБ.</p>
+			<div class="example__wrap-img">
+				{% include "./templates/picture.twig" with {name: "cat-cat", class: "example__img", alt: "Слайдер с двумя котами - толстым и худым."} %}
 			</div>
-			<div class="example__wrap">
-				<dt class="example__term">Затрачено времени</dt>
-				<dd class="example__definition">60&nbsp;дней</dd>
-			</div>
-		</dl>
-		<p class="example__total">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;РУБ.</p>
-		<div class="example__wrap-img">
-			{% include "./templates/picture.twig" with {name: "cat-cat", class: "example__img", alt: "Слайдер с двумя котами - толстым и худым."} %}
 		</div>
 	</section>
 
-	<section class="contacts">
-		{% include "./templates/contacts.twig" %}
-	</section>
-
+	{% include "./templates/contacts.twig" %}
 
 	{# {% include "./templates/picture.twig" with {name: "example", class: "example-image", alt: "Альтернативный текст."} %} #}
 {% endblock %}
