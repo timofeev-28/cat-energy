@@ -5,15 +5,17 @@
 {% block main %}
 
 	<section class="promo">
-		<h1 class="title-big promo__title">Функциональное питание для котов</h1>
-		<p class="promo__descr">Занялся собой? Займись котом!</p>
-		<div class="promo__wrap-img">
-			{% include "./templates/picture.twig" with {name: "promo", class: "promo__image", alt: "Банка с питанием для кота."} %}
+		<div class="page__container promo__container">
+			<h1 class="promo__title title-big">Функциональное питание для&nbsp;котов</h1>
+			<p class="promo__descr">Занялся собой? Займись котом!</p>
+			<div class="promo__wrap-img">
+				{% include "./templates/picture.twig" with {name: "promo", class: "promo__image", alt: "Банка с питанием для кота."} %}
+			</div>
+			<a class="promo__link link-btn" href="#!">Подобрать программу</a>
 		</div>
-		<a class="promo__link link-btn" href="#!">Подобрать программу</a>
 	</section>
 
-	<section class="choice page__centerer">
+	<section class="choice page__container">
 		<ul class="choice__list">
 			<li class="choice__item choice__item--slim">
 				<h2 class="choice__title title">Похудение</h2>

@@ -15,7 +15,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 30px 20px 18px;
-	min-block-size: 266px;
+	// min-block-size: 266px;
 	background: var(--color-bcg);
 
 	&::before {
@@ -50,7 +50,7 @@
 
 .choice__descr {
 	margin-top: 0;
-	margin-bottom: auto;
+	margin-bottom: 15px;
 	padding-bottom: 23px;
 	font-size: 14px;
 	line-height: 18px;
