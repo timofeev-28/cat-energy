@@ -11,4 +11,11 @@
 	text-transform: uppercase;
 	color: var(--white);
 	background: var(--accent-color);
+
+	@media #{$not-mobile} {
+		padding-block: 16px;
+		inline-size: 244px;
+		font-size: 20px;
+		line-height: 20px;
+	}
 }

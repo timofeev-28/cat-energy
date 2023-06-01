@@ -29,6 +29,10 @@
 	&::after {
 		bottom: 0;
 	}
+
+	@media #{$not-mobile} {
+		display: none;
+	}
 }
 
 @media (any-hover: hover) {

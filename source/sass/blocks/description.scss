@@ -1,6 +1,10 @@
 .description {
 	padding-top: 10px;
 	padding-bottom: 49px;
+
+	@media #{$tablet-only} {
+		padding-top: 54px;
+	}
 }
 
 .description__title {
